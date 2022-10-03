@@ -1,7 +1,13 @@
 import { useState } from 'react'
 
+import splitbee from '@splitbee/web'
+
 import Commands from './components/Commands'
 import Packages from './components/Packages'
+
+splitbee.init({
+  disableCookie: true,
+})
 
 function App() {
   const [commands, setCommands] = useState<Array<string>>([])
