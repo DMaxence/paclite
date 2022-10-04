@@ -152,6 +152,10 @@ button:focus-visible {
     border-radius: 8px;
     background-color: #1a1a1a;
     transition: background-color 0.25s;
+
+    a {
+      margin-left: auto;
+    }
   }
 }
 
@@ -193,7 +197,7 @@ pre {
 
 code {
   &:before {
-    content: "$ ";
+    content: '$ ';
   }
   font-family: 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Lucida Console', Monaco,
     monospace;
@@ -208,7 +212,8 @@ code {
 }
 
 @media (prefers-color-scheme: light) {
-  code, .package-list--item {
+  code,
+  .package-list--item {
     background-color: #f9f9f9;
   }
 }

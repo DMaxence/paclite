@@ -1,12 +1,15 @@
 import Axios from '../assets/axios.png'
 import Ethers from '../assets/ethers.png'
 import I18Next from '../assets/i18next.png'
+import Moment from '../assets/moment.png'
+import Prettier from '../assets/prettier.png'
 import ReactNativeNavigation from '../assets/react-native-navigation.png'
 import ReactRouterDom from '../assets/react-router-dom.png'
 import ReactToastify from '../assets/react-toastify.png'
 import Sass from '../assets/sass.png'
 import Splitbee from '../assets/splitbee.png'
 import TailwindCss from '../assets/tailwindcss.png'
+import Uuid from '../assets/uuid.png'
 import Web3Modal from '../assets/web3modal.png'
 
 const packageList = [
@@ -94,6 +97,33 @@ const packageList = [
         url: 'https://splitbee.io/docs/javascript-library',
         icon: Splitbee,
         command: '@splitbee/web',
+        isToggled: false,
+      },
+      {
+        slug: 'moment',
+        name: 'Moment',
+        description: 'Parse, validate, manipulate, and display dates and times',
+        url: 'https://momentjs.com/docs/#/use-it/',
+        icon: Moment,
+        command: 'moment',
+        isToggled: false,
+      },
+      {
+        slug: 'uuid',
+        name: 'Uuid',
+        description: 'Generate RFC-compliant UUIDs in JavaScript',
+        url: 'https://github.com/uuidjs/uuid',
+        icon: Uuid,
+        command: 'uuid',
+        isToggled: false,
+      },
+      {
+        slug: 'prettier',
+        name: 'Prettier',
+        description: 'An opinionated code formatter',
+        url: 'https://prettier.io/docs/en/index.html',
+        icon: Prettier,
+        command: 'prettier',
         isToggled: false,
       },
     ],
