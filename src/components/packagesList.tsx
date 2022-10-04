@@ -2,6 +2,7 @@ import Axios from '../assets/axios.png'
 import Ethers from '../assets/ethers.png'
 import I18Next from '../assets/i18next.png'
 import Moment from '../assets/moment.png'
+import Pinia from '../assets/pinia.png'
 import Prettier from '../assets/prettier.png'
 import ReactNativeNavigation from '../assets/react-native-navigation.png'
 import ReactRouterDom from '../assets/react-router-dom.png'
@@ -10,6 +11,7 @@ import Sass from '../assets/sass.png'
 import Splitbee from '../assets/splitbee.png'
 import TailwindCss from '../assets/tailwindcss.png'
 import Uuid from '../assets/uuid.png'
+import Vue from '../assets/vue.png'
 import Web3Modal from '../assets/web3modal.png'
 
 const packageList = [
@@ -70,15 +72,6 @@ const packageList = [
         icon: I18Next,
         command:
           'remix-i18next i18next react-i18next i18next-http-backend i18next-fs-backend i18next-browser-languagedetector',
-        isToggled: false,
-      },
-      {
-        slug: 'vue-i18next',
-        name: 'Vue I18next',
-        description: 'Internationalization for Vue',
-        url: 'https://github.com/i18next/i18next-vue',
-        icon: I18Next,
-        command: 'i18next-vue',
         isToggled: false,
       },
       {
@@ -156,6 +149,38 @@ const packageList = [
         url: 'https://fkhadra.github.io/react-toastify/introduction/',
         icon: ReactToastify,
         command: 'react-toastify',
+        isToggled: false,
+      },
+    ],
+  },
+  {
+    title: 'Vue packages',
+    list: [
+      {
+        slug: 'react-router-dom',
+        name: 'Vue Router v4',
+        description: 'The official router for Vue.js',
+        url: 'https://router.vuejs.org/installation.html',
+        icon: Vue,
+        command: 'vue-router@4',
+        isToggled: false,
+      },
+      {
+        slug: 'vue-i18next',
+        name: 'Vue I18next',
+        description: 'Internationalization for Vue',
+        url: 'https://github.com/i18next/i18next-vue',
+        icon: I18Next,
+        command: 'i18next-vue',
+        isToggled: false,
+      },
+      {
+        slug: 'pinia',
+        name: 'Pinia',
+        description: 'A store for Vue',
+        url: 'https://pinia.vuejs.org/getting-started.html',
+        icon: Pinia,
+        command: 'pinia',
         isToggled: false,
       },
     ],
