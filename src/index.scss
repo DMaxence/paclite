@@ -114,19 +114,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 .package-list {
   &--container {
     display: flex;
@@ -211,13 +198,6 @@ code {
   overflow-y: scroll;
 }
 
-@media (prefers-color-scheme: light) {
-  code,
-  .package-list--item {
-    background-color: #f9f9f9;
-  }
-}
-
 @media (max-width: 640px) {
   .package-list {
     &--container {
@@ -235,6 +215,43 @@ code {
 
 footer {
   .content {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+    p {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+    }
+
+    #github-svg {
+      fill: #f9f9f9;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  code,
+  .package-list--item {
+    background-color: #f9f9f9;
+  }
+  footer {
+    .content {
+      #github-svg {
+        fill: #1b1f23;
+      }
+    }
   }
 }
