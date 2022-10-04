@@ -4,6 +4,7 @@ import splitbee from '@splitbee/web'
 
 import Commands from './components/Commands'
 import Packages from './components/Packages'
+import Footer from './components/Footer'
 
 splitbee.init({
   disableCookie: true,
@@ -26,6 +27,7 @@ function App() {
     <div className="container">
       <Packages setCommands={setCommands} />
       <Commands commands={filteredCommands()} />
+      <Footer />
     </div>
   )
 }
